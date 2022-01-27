@@ -1,0 +1,38 @@
+sample features associated to each video: 
+
+    - FEATURE                                           (variable name: data type)
+
+    - unique natural number to identify video           (id:            integer)
+    - unique natural number to identify parent video    (parent_id:     integer)
+    - name of the channel                               (channel:       string)
+    - number of subscribers                             (subscribers:   integer) 
+    - is the user subscribed to the channel             (subscribed:    boolean) 
+    - video title                                       (title:         string) 
+    - video views                                       (views:         integer) 
+    - video likes                                       (likes:         integer) 
+    - video comments                                    (comments:      integer) 
+    - video duration                                    (duration:      integer)
+    - video link/url                                    (link:          string) 
+
+setup seed url, videos per layer, file name for excel file
+setup webdriver (bot browser) with firefox and unique firefox profile (containing cookies, preferences, etc.)
+
+for seed url (root); 
+    - get page
+    - save all information associated to video 
+    - list first 50 suggested videoes' url and duration
+
+for each suggested video; 
+    - get page 
+    - save all information associated to video
+    - list first 50 suggested videoes' url and duration
+
+    for each suggested video; 
+        - get page 
+        - save all information associated to video
+
+save list to csv file
+
+
+
+
